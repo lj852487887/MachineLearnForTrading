@@ -24,7 +24,6 @@ def get_data(symbols, dates):
                 parse_dates=True, usecols=['Date', 'Adj Close'], na_values=['nan'])
         df_temp = df_temp.rename(columns={'Adj Close': symbol})
         df = df.join(df_temp)
-        df = df.dropna()
 
     return df
 
