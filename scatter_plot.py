@@ -33,6 +33,8 @@ def test_run():
 
     print daily_returns.corr(method='pearson')
 
+    print ghjghj
+
 
 
 if __name__ == "__main__":
